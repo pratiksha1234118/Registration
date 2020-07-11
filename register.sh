@@ -12,4 +12,15 @@ else
 fi
 
 
+#lastname
+#!/bin/bash -x
+echo "Enter your last name"
+read LName;
+pattern="^[A-Z]{1}[a-z]{2,}$";
+if [[ $LName =~ $pattern ]]
+then
+        echo "last name is valid";
+else
+        echo "last name is invalid";
+fi
 
